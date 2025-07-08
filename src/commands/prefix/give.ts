@@ -73,7 +73,7 @@ export async function execute(message: Message, args: string[]) {
 
         const successEmbed = new EmbedBuilder()
             .setColor('#000000')
-            .setDescription(`You gave **${amount}** coins to ${targetUser.username}!\nYour new balance: **${data.users[message.author.id].balance}** coins`)
+            .setDescription(`You gave **${amount}** coins to ${targetUser.username}!\n-# Your new balance: **${data.users[message.author.id].balance}** coins`)
             .setFooter({ text: message.author.username, iconURL: message.author.displayAvatarURL() })
             .setTimestamp();
 

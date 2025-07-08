@@ -19,4 +19,5 @@ const client = new Client({
     
     await client.login(config.token);
 })().catch(error => {
-}); 
+    console.error('Error starting the bot:', error);
+});

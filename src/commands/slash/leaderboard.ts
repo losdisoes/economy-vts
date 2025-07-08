@@ -1,5 +1,5 @@
 import { SlashCommandBuilder } from '@discordjs/builders';
-import { CommandInteraction, EmbedBuilder } from 'discord.js';
+import { ChatInputCommandInteraction, EmbedBuilder } from 'discord.js';
 import fs from 'fs/promises';
 import path from 'path';
 
@@ -13,9 +13,9 @@ export const data = new SlashCommandBuilder()
             .setMinValue(1)
             .setRequired(false));
 
-export async function execute(interaction: CommandInteraction) {
+export async function execute(interaction: ChatInputCommandInteraction) {
     try {
-        const page = interaction.options.getInteger('page') || 1;
+        const page = interaction.options.getInteger('page') ?? 1;
         const itemsPerPage = 10;
         const startIndex = (page - 1) * itemsPerPage;
 
@@ -51,7 +51,7 @@ export async function execute(interaction: CommandInteraction) {
                     return `${medal} **${position}.** ${user.profile.username} - **${user.balance}** coins`;
                 }).join('\n')
             )
-            .setFooter({ text: `Page \`\`${page}/${totalPages}\`\` // Requested by ${interaction.user.username}`, iconURL: interaction.user.displayAvatarURL() })
+            .setFooter({ text: `Page ${page}/${totalPages} && Requested by ${interaction.user.username}`, iconURL: interaction.user.displayAvatarURL() })
             .setTimestamp();
 
         await interaction.reply({ embeds: [leaderboardEmbed] });
@@ -64,4 +64,4 @@ export async function execute(interaction: CommandInteraction) {
 
         await interaction.reply({ embeds: [errorEmbed], ephemeral: true });
     }
-} 
+}

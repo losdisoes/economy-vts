@@ -44,7 +44,7 @@ export async function execute(message: Message, args: string[]) {
                     return `${medal} **${position}.** ${user.profile.username} - **${user.balance}** coins`;
                 }).join('\n')
             )
-            .setFooter({ text: `Page \`\`${page}/${totalPages}\`\` // Requested by ${message.author.username}`, iconURL: message.author.displayAvatarURL() })
+            .setFooter({ text: `Page ${page}/${totalPages} && Requested by ${message.author.username}`, iconURL: message.author.displayAvatarURL() })
             .setTimestamp();
 
         await message.reply({ embeds: [leaderboardEmbed] });
@@ -57,4 +57,4 @@ export async function execute(message: Message, args: string[]) {
 
         await message.reply({ embeds: [errorEmbed] });
     }
-} 
+}

@@ -1,5 +1,5 @@
 import { SlashCommandBuilder } from '@discordjs/builders';
-import { CommandInteraction, EmbedBuilder, User } from 'discord.js';
+import { ChatInputCommandInteraction, EmbedBuilder } from 'discord.js';
 import fs from 'fs/promises';
 import path from 'path';
 
@@ -12,9 +12,9 @@ export const data = new SlashCommandBuilder()
             .setDescription('The user to check balance for')
             .setRequired(false));
 
-export async function execute(interaction: CommandInteraction) {
+export async function execute(interaction: ChatInputCommandInteraction) {
     try {
-        const targetUser = interaction.options.getUser('user') || interaction.user;
+        const targetUser = interaction.options.getUser('user') ?? interaction.user;
         const usersPath = path.join(process.cwd(), '@data', 'users.json');
         const data = JSON.parse(await fs.readFile(usersPath, 'utf-8'));
         
@@ -44,10 +44,10 @@ export async function execute(interaction: CommandInteraction) {
     } catch (error) {
         console.error('Error in balance command:', error);
         const errorEmbed = new EmbedBuilder()
-        .setColor('#000000')
+            .setColor('#000000')
             .setDescription('There was an error while executing this command.')
             .setFooter({ text: interaction.user.username, iconURL: interaction.user.displayAvatarURL() });
 
         await interaction.reply({ embeds: [errorEmbed], ephemeral: true });
     }
-} 
+}

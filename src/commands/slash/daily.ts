@@ -1,5 +1,5 @@
 import { SlashCommandBuilder } from '@discordjs/builders';
-import { CommandInteraction, EmbedBuilder } from 'discord.js';
+import { ChatInputCommandInteraction, EmbedBuilder } from 'discord.js';
 import fs from 'fs/promises';
 import path from 'path';
 
@@ -11,7 +11,7 @@ export const data = new SlashCommandBuilder()
     .setName('daily')
     .setDescription('Collect your daily reward');
 
-export async function execute(interaction: CommandInteraction) {
+export async function execute(interaction: ChatInputCommandInteraction) {
     try {
         const usersPath = path.join(process.cwd(), '@data', 'users.json');
         const data = JSON.parse(await fs.readFile(usersPath, 'utf-8'));
@@ -68,4 +68,4 @@ export async function execute(interaction: CommandInteraction) {
 
         await interaction.reply({ embeds: [errorEmbed], ephemeral: true });
     }
-} 
+}

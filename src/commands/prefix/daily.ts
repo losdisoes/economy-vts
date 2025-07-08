@@ -66,4 +66,4 @@ export async function execute(message: Message, args: string[]) {
 
         await message.reply({ embeds: [errorEmbed] });
     }
-} 
+}

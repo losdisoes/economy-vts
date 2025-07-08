@@ -1,5 +1,5 @@
 export const config = {
-    token: "enter_your_bot_token_here",
-    clientId: "enter_your_id_here",
-    prefix: "enter_your_prefix_here",
+    token: "enter_token_here",
+    clientId: "enter_client_id_here",
+    prefix: "enter_prefix_here",
 };

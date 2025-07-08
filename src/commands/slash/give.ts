@@ -1,5 +1,5 @@
 import { SlashCommandBuilder } from '@discordjs/builders';
-import { CommandInteraction, EmbedBuilder } from 'discord.js';
+import { ChatInputCommandInteraction, EmbedBuilder } from 'discord.js';
 import fs from 'fs/promises';
 import path from 'path';
 
@@ -18,10 +18,10 @@ export const data = new SlashCommandBuilder()
             .setRequired(true)
             .setMinValue(1));
 
-export async function execute(interaction: CommandInteraction) {
+export async function execute(interaction: ChatInputCommandInteraction) {
     try {
-        const targetUser = interaction.options.getUser('user');
-        const amount = interaction.options.getInteger('amount');
+        const targetUser = interaction.options.getUser('user', true); // true makes it non-null
+        const amount = interaction.options.getInteger('amount', true); // true makes it non-null
 
         if (targetUser.id === interaction.user.id) {
             const errorEmbed = new EmbedBuilder()
@@ -78,7 +78,7 @@ export async function execute(interaction: CommandInteraction) {
 
         const successEmbed = new EmbedBuilder()
             .setColor('#000000')
-            .setDescription(`You gave **${amount}** coins to ${targetUser.username}!\nYour new balance: **${data.users[interaction.user.id].balance}** coins`)
+            .setDescription(`You gave **${amount}** coins to ${targetUser.username}!\n-# Your new balance: **${data.users[interaction.user.id].balance}** coins`)
             .setFooter({ text: interaction.user.username, iconURL: interaction.user.displayAvatarURL() })
             .setTimestamp();
 
@@ -92,4 +92,4 @@ export async function execute(interaction: CommandInteraction) {
 
         await interaction.reply({ embeds: [errorEmbed], ephemeral: true });
     }
-} 
+}
