@@ -1,65 +1,73 @@
-# Discord Economy Bot
+# Discord Economy Bot // Version TypeScript
 
-A Discord bot with economy features, written in TypeScript.
+![JSON](https://img.shields.io/badge/dynamic/json)
+![Last Commit](https://img.shields.io/github/commit-activity/:interval/:user/:repo)
 
-## Features
+Hello, welcome to the project. This project is a Discord Bot developed with typescript language for the economy type. I bring new features every 3 days. Check below for javascript and python versions of this same project.
 
-- **Daily Rewards**: Collect daily coins (890-1070)
-- **Balance Check**: View your or others' balance
-- **Transfer System**: Give coins to other users
-- **Leaderboard**: View the richest users
-- **Profile System**: View user profiles with rank information
+## Using the Project
 
-## Commands
+To use the project, you must first clone or download the project.
 
-### Slash Commands
-- `/daily` - Collect daily reward
-- `/balance [user]` - Check balance
-- `/give <user> <amount>` - Give coins to user
-- `/leaderboard [page]` - View richest users
-- `/profile [user]` - View user profile
-
-### Prefix Commands
-- `daily` - Collect daily reward
-- `balance [@user]` - Check balance
-- `give @user <amount>` - Give coins to user
-- `leaderboard [page]` - View richest users (`lb` or `top` aliases)
-- `profile [@user]` - View user profile (`p` or `prof` aliases)
-
-## Installation
-
-1. Clone the repository
+1. Clone The Project
 ```bash
-git clone https://github.com/yourusername/economy-bot.git
-cd economy-bot
+git clone https://github.com/hypecavess/economy-vts.git
 ```
 
-2. Install dependencies
+or 
+
+2. Download The Project
+- To download the project, look for a green button on this page that says "Code". Click on the button and select "Download ZIP" from the menu that appears at the bottom.
+- After extracting the downloaded ZIP file to a desired location, open the extracted folder in your code editor and continue with the rest of the steps in this text.
+
+## Installation and Configuration
+
+After completing the necessary steps above, we need to continue with the steps below.
+
+1. Download the required dependencies:
+The package.json file in the project contains all the necessary dependencies, you do not need to add anything extra to the command.
+
 ```bash
 npm install
 ```
 
-3. Build the project
+2. Fill in the configuration file:
+The configuration file should be as follows in the project, you should fill in the fields with your actual bot data.
+
+```ts
+export const config = {
+    token: "your_token_here",
+    clientId: "your_client_id_here",
+    prefix: "your_prefix_here",
+};
+```
+
+3. Start the project
+When you use the command below, your project will be started. Unless you see a message like *"Bot [YOUR_BOT_NAME] has logged in!"* in the console, it means your bot has not started yet.
+
 ```bash
-npm run build
+npm run start
 ```
 
-4. Start the bot
-```bash
-npm start
-```
+That's all, really. You can get the project and use it in just a few steps.
 
-## Configuration
+## Project Content
 
-Create a `config.json` file in the root directory:
+- Commands
+  - Balance
+  - Daily
+  - Give
+  - Leaderboard
+  - Ping
+  - Profile
 
-```json
-{
-  "token": "YOUR_BOT_TOKEN",
-  "prefix": "YOUR_PREFIX"
-}
-```
+- Types
+  - Slash
+  - Prefix
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 
+## Questions and Contact
+If you have a problem with the project, have a question, or want to contact me about any situation, you can come to the server below or send me a request on Discord and get in touch.
+
+## Explore in Other Languages
+Explore this project in other languages. **Currently** [Version Discord.js](https://github.com/hypecavess/economy-vdjs) and [Version Python](https://github.com/hypecavess/economy-vpy) are available.
