@@ -1,7 +1,15 @@
-# Discord Economy Bot // Version TypeScript
+# <div align="center">Discord Economy Bot // Version TypeScript</div>
 
-![JSON](https://img.shields.io/badge/dynamic/json)
-![Last Commit](https://img.shields.io/github/commit-activity/:interval/:user/:repo)
+<div align="center"><em>Technologies used in this project:</em></div>
+
+<div align="center">
+
+![JSON](https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![NPM](https://img.shields.io/badge/NPM-CB3837?style=for-the-badge&logo=npm&logoColor=white)
+![Last Commit](https://img.shields.io/github/last-commit/hypecavess/economy-vts?style=for-the-badge)
+
+</div>
 
 Hello, welcome to the project. This project is a Discord Bot developed with typescript language for the economy type. I bring new features every 3 days. Check below for javascript and python versions of this same project.
 
