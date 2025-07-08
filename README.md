@@ -4,6 +4,7 @@
 <br/>
 <div align="center">
 
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=plastic&logo=typescript&logoColor=white)
 ![JSON](https://img.shields.io/badge/JSON-000000?style=plastic&logo=json&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=plastic&logo=node.js&logoColor=white)
 ![NPM](https://img.shields.io/badge/NPM-CB3837?style=plastic&logo=npm&logoColor=white)

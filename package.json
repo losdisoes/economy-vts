@@ -1,5 +1,5 @@
 {
-  "name": "@nothinger/bot.dualts",
+  "name": "@hypecavess/economy-vts",
   "description": "A free starter pack for using both slash and prefix commands developed in TypeScript v14 by Nothinger Developers.",
   "version": "1.0.0",
   "main": "dist/index.js",
