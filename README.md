@@ -1,7 +1,10 @@
 # <div align="center">Discord Economy Bot // Version TypeScript</div>
 
-<div align="center"><em>Technologies used in this project:</em></div>
+<div align="center">
+<em style="font-size: 1.2em; color: #666;">Technologies used in this project:</em>
+</div>
 
+<br/>
 
 <div align="center">
 
