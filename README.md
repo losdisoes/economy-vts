@@ -1,9 +1,7 @@
 # <div align="center">Discord Economy Bot // Version TypeScript</div>
 
 ### <div align="center"> <em>Technologies used in this project:</em> </div>
-
 <br/>
-
 <div align="center">
 
 ![JSON](https://img.shields.io/badge/JSON-000000?style=plastic&logo=json&logoColor=white)
@@ -13,7 +11,7 @@
 
 </div>
 
-Hello, welcome to the project. This project is a Discord Bot developed with typescript language for the economy type. I bring new features every 3 days. Check below for javascript and python versions of this same project.
+<div align="center"> Hello, welcome to the project. This project is a Discord Bot developed with typescript language for the economy type. I bring new features every 3 days. Check below for javascript and python versions of this same project. </div>
 
 ## Using the Project
 
@@ -81,3 +79,9 @@ If you have a problem with the project, have a question, or want to contact me a
 
 ## Explore in Other Languages
 Explore this project in other languages. **Currently** [Version Discord.js](https://github.com/hypecavess/economy-vdjs) and [Version Python](https://github.com/hypecavess/economy-vpy) are available.
+
+## License and Project
+The project is licensed under **Nothinger**'s **NSL-1.0** license. The base schema for this project is the Schema from Nothinger's "*TypeScript Starter Pack && Dual*" Package.
+
+
+<div align="center">All Rights Reserved - HypeCaves</div>
