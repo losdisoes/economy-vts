@@ -84,4 +84,4 @@ Explore this project in other languages. **Currently** [Version Discord.js](http
 The project is licensed under **Nothinger**'s **NSL-1.0** license. The base schema for this project is the Schema from Nothinger's "*TypeScript Starter Pack && Dual*" Package.
 
 
-<div align="center">All Rights Reserved - HypeCaves</div>
+<div align="center">All Rights Reserved ~ HypeCaves</div>
