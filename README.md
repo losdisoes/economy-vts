@@ -5,10 +5,10 @@
 
 <div align="center">
 
-![JSON](https://img.shields.io/badge/JSON-000000?style=flat&logo=json&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white)
+![JSON](https://img.shields.io/badge/JSON-000000?style=plastic&logo=json&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=plastic&logo=node.js&logoColor=white)
 ![NPM](https://img.shields.io/badge/NPM-CB3837?style=plastic&logo=npm&logoColor=white)
-![Last Commit](https://img.shields.io/github/last-commit/hypecavess/economy-vts?style=social)
+![Last Commit](https://img.shields.io/github/last-commit/hypecavess/economy-vts?style=plastic)
 
 </div>
 
